@@ -17,8 +17,11 @@ var getAkanName = () => {
         let maleAkanName = maleAkanNameArray[numberOfDay];
         alert(numberOfDay);
         alert(maleAkanName);
-    } else {
-        alert("gender not updated");
+    } else if (gender == 'Female'){
+        const femaleAkanNameArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+        let femaleAkanName = femaleAkanNameArray[numberOfDay];
+        alert(numberOfDay);
+        alert(femaleAkanName);
     }
 }
 
