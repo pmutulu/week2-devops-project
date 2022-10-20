@@ -1,13 +1,30 @@
-// Javascript program to find day of a given date
-  
-function dayofweek(d, m, y)
-{
-    let t = [ 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 ];
-    y -= (m < 3) ? 1 : 0;
-    return ( y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
-}
  
-// Driver Code
+ //Function to calculate the day of Week one was born. Sunday 1 Saturday 7
+
+
+ function dayOfWeek(dob, mob, yob)
+ {
+     var t = [ 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 ];
+     yob -= (mob < 3) ? 1 : 0;
+     return ( yob + yob/4 - yob/100 + yob/400 + t[mob-1] + dob) % 7;
+ }
  
-    let day = dayofweek(31, 3, 1990);
-    console.log(Math.round(day));
+ 
+ //get day, month and year of birth from HTML form
+ var getDay = () => {
+     // Retrieve dob, mob, yob
+
+     var dobInput = document.getElementById('dob');
+     var mobInput = document.getElementById('mob');
+     var yobInput = document.getElementById('yob');
+          // Retrieve the dob, mob, yob values
+     var dob = dobInput.value;
+     var mob = mobInput.value;
+     var yob = yobInput.value;
+
+
+
+     let day = dayOfWeek(25, 3, 1990);
+     alert(Math.round(day));    
+ }
+ 

@@ -54,7 +54,13 @@ var loginHandler = () => {
     //dayOfWeek(dob, mob, yob);
     // Driver Code
     let day = dayOfWeek(dob, mob, yob);
-    alert(Math.round(day));    
+    alert(Math.round(day));
+
+    function printvalue(){  
+        var name=document.getElementById('dob').value;  
+        alert("Welcome: "+dob);  
+        }  
+     
 }
 
 
