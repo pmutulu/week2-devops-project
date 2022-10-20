@@ -48,9 +48,6 @@ var getDayOfWeek = () => {
     } else {
         alert('Your name is note yer loaded');
     }
-
-
-
 }
 
 
