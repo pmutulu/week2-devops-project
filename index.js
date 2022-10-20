@@ -1,22 +1,19 @@
 
 var getDayOfWeek = () => {
-    // Retrieve Birthday and Gender
+    // Retrieve Birthday and Gender from HTML from
     var birthdayInput = document.getElementById('birthday');
     var genderInput = document.getElementById('gender');
-
-    // Retrieve the Birthday and Gender
+    // Retrieve the Birthday and Gender values
     var birthday = birthdayInput.value;
     var gender = genderInput.value;
 
     alert(birthday);
     alert(gender);
-    /*const dayOfWeek = new Date(birthday);
-    let day = dayOfWeek.getDate();
-    alert(day);*/
+    //Get the Day of Week and assign it a number 0 for saturday and 6 for Saturday.
     var dayOfWeek = new Date(birthday);
     var numberOfDay = dayOfWeek.getDay();
-    // alert("Week Day: " + dayOfWeek.getDay());
     alert(numberOfDay);
+    //If statetements to check the number associated with the day of Week and Assign Akan Name
     if (numberOfDay == 0 && gender == 'Male') {
         alert("Your were born on Sunday and your Akan Name is Kwasi");
     } else if (numberOfDay == 1 && gender == 'Male') {
