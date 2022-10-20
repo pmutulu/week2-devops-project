@@ -1,5 +1,5 @@
 
-var getDayOfWeek = () => {
+var getAkanName = () => {
     // Retrieve Birthday and Gender from HTML from
     var birthdayInput = document.getElementById('birthday');
     var genderInput = document.getElementById('gender');
