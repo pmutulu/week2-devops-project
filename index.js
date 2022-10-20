@@ -6,13 +6,12 @@ var getAkanName = () => {
     // Retrieve the Birthday and Gender values
     var birthday = birthdayInput.value;
     var gender = genderInput.value;
-
-    alert(birthday);
-    alert(gender);
-    //Get the Day of Week and assign it a number 0 for saturday and 6 for Saturday.
+    //alert(birthday);
+    //alert(gender);
+    //Get the Day of Week and assign it a number 0 for Sunday and 6 for Saturday.
     var dayOfWeek = new Date(birthday);
     var numberOfDay = dayOfWeek.getDay();
-    alert(numberOfDay);
+    //alert(numberOfDay);
     //If statetements to check the number associated with the day of Week and Assign Akan Name
     if (numberOfDay == 0 && gender == 'Male') {
         alert("Your were born on Sunday and your Akan Name is Kwasi");
