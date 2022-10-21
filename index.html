@@ -1,53 +1,67 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>Akan Name Calculator</title>
-
-    <link href="bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AKan Name Calculator by Pascal Mutulu</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
     <!-- Link to JS -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <main class="px-3">
-            <h1>Akan Name Calculator.</h1>
-            <p class="lead">This web application takes a user's birthday and calculates the day of the week they were
-                born and
-                then depending on their gender outputs their Akan Name. </p>
-
-            <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as
-                a 'day
-                name' which corresponds to the day in the week they were born.</p>
-        </main>
-        <div>
-            <form>
-                <label for="birthday">Please Enter Your Birthday:</label>
-                <input type="date" id="birthday" name="birthday"></br></br>
-                <label for="gender">Choose your Gender</label>:</label>
-                <select id="gender" name="gender">
-                    <option value=" "> </option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select><br></br>
-                <button onclick="getAkanName()" type="submit">Check Akan Name</button>
-            </form>
+<body id="page-top">
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-80">
+            <div class="row gx-4 gx-lg-5 h-80 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Akan Name Calculator.</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">This web application takes a user's birthday and calculates the day of
+                        the week they were born and then depending on their gender outputs their Akan Name.</p>
+                    <p class="text-white-75 mb-5">Akan names are derived from Ghanian culture. Frequently in Ghana,
+                        children are given their first name as a 'day name' which corresponds to the day in the week
+                        they were born.</p>
+                    <p class="text-white-75 mb-5">Please enter you Birthday and Gender on below form</p>
+                </div>
+                <div>
+                    <form class="text-white-75 mb-5">
+                        <label for="birthday">Please Enter Your Birthday:</label>
+                        <input type="date" id="birthday" name="birthday"></br></br>
+                        <label for="gender">Choose your Gender</label>:</label>
+                        <select id="gender" name="gender">
+                            <option value=" "> </option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select><br></br>
+                        <button onclick="getAkanName()" type="submit" class="btn btn-primary btn-xl">Check Akan
+                            Name</button>
+                </div>
+            </div>
         </div>
-
-        <footer class="mt-auto text-white-50">
-            <p>by <a href="" class="text-white">Pascal Mutulu</a>.</p>
-        </footer>
-    </div>
+    </header>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2022 - PM(Pascal Mutulu) LABS</div>
+        </div>
+    </footer>
 </body>
 
 </html>
