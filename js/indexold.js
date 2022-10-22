@@ -12,20 +12,17 @@ var getAkanName = () => {
     //If statements to give Akan Names depending on the gender and as well confirm validity of the birthday
     if (dayOfWeek > currentDate) {
         alert("Given Birthday is in the future, Please Enter a Valid birthday.");
-        return;
-    }
-    switch (gender) {
-        case 'Male':
-            const maleAkanNameArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-            let maleAkanName = maleAkanNameArray[numberOfDay];
-            alert("Your Akan Name is: " + maleAkanName);
-            break;
-        case 'Female':
-            const femaleAkanNameArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-            let femaleAkanName = femaleAkanNameArray[numberOfDay];
-            alert("Your Akan Name is: " + femaleAkanName);
-            break;
-        default:
-            alert("Akan Name not found, please check birthday and/or gender entered")
+    } else if (gender == 'Male') {
+        const maleAkanNameArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        let maleAkanName = maleAkanNameArray[numberOfDay];
+        alert("Your Akan Name is: " + maleAkanName);
+    } else if (gender == 'Female') {
+        const femaleAkanNameArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+        let femaleAkanName = femaleAkanNameArray[numberOfDay];
+        alert("Your Akan Name is: " + femaleAkanName);
+    } else {
+        alert("Akan Name not found, please check birthday and/or gender entered")
     }
 }
+
+
